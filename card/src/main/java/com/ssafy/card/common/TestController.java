@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b7a6eff011c9762b781631018e7ce643b12262d96db70fe257f7bac6856d1cc
-size 439
+package com.ssafy.card.common;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@Slf4j
+@RestController
+@RequestMapping("/")
+public class TestController {
+
+    @GetMapping("/")
+    public String test(){
+        log.debug("테스트");
+        return "안녕";
+    }
+}
