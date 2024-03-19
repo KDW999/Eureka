@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13fd583f51f83fe949d4261e0033f0038d58158930c3d34d869a4c330e17bed5
-size 26
+rootProject.name = 'card'
