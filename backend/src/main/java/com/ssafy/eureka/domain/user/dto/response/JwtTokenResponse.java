@@ -1,19 +1,3 @@
-package com.ssafy.eureka.domain.user.dto.response;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
-public class JwtTokenResponse {
-
-    private String refreshToken;
-    private String accessToken;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4d282d0b8c0cb72fc21707e0451f5a69874470a17ce97c6c063844c811f21cf8
+size 352

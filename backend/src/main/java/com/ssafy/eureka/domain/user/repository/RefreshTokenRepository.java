@@ -1,14 +1,3 @@
-package com.ssafy.eureka.domain.user.repository;
-
-import com.ssafy.eureka.domain.user.dto.RefreshToken;
-import java.util.Optional;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface RefreshTokenRepository extends CrudRepository<RefreshToken, String> {
-    Optional<RefreshToken> findByUserId(String userId);
-    boolean existsByUserId(String userId);
-    void deleteByUserId(String userId);
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e2bf50d9b4603729de8eff25486288029f0f968c72253553d726da63745fc51
+size 482
