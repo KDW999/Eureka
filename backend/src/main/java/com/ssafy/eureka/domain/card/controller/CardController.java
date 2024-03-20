@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c11c20ef20f1621222e9b5170e4ee661872a563b63c79a68c836774715afd706
-size 474
+package com.ssafy.eureka.domain.card.controller;
+
+import io.swagger.v3.oas.annotations.tags.Tag;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@Slf4j
+@Tag(name = "카드 상품 API", description = "상품 조회...")
+@RestController
+@RequiredArgsConstructor
+@RequestMapping("/api/card")
+public class CardController {
+
+}

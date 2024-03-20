@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:881d7fab125e3bf2eee4aa6e4ff8e4d18ea07ddbd98dafc6baf3c8d188b859f8
-size 330
+package com.ssafy.eureka.domain.card.dto;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Getter
+@Setter
+@Table(name = "benefit_detail")
+public class CardBenefitDetailEntity {
+    @Id
+    private int cardBenefitDetailId;
+}

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2393a8d5f63e6bc34cda03e6c6a19eecbf1461f451ef555e2c7b9e89ce59621
-size 212
+package com.ssafy.card.Auth.dto.request;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class JoinDto {
+
+    private String phoneNumber;
+    private String name;
+    private String birth;
+}
