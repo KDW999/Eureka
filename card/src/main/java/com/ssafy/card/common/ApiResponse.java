@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f971e81a35179fdd9ebc0d1e7455a10336225c8fc47795e3124fcde76f400f88
-size 393
+package com.ssafy.card.common;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+
+@Getter
+public class ApiResponse<T> {
+
+    private String message;
+    private int status;
+    private T data;
+
+    @Builder
+    public ApiResponse(String message, int status, T data){
+        this.message = message;
+        this.status = status;
+        this.data = data;
+    }
+}
