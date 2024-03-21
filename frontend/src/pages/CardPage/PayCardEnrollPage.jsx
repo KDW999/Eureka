@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:60e3578e3140e2f457bc75067b0227e4a833afdc20b455ebe6e11eb4257008c5
-size 361
+import { StyleSheet, Text, View } from "react-native"
+
+function PayCardEnrollPage() {
+  return (
+    <View style={styles.container}>
+      <Text>결제 카드 추가 페이지</Text>
+    </View>
+  )
+}
+
+export default PayCardEnrollPage
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+})
