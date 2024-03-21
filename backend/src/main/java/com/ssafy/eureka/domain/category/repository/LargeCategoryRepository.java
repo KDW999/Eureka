@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:412ad134d40840dcc428b2d0f8a6b73c0823c55a11b7f25bf7df326ba8d153de
-size 426
+package com.ssafy.eureka.domain.category.repository;
+
+import com.ssafy.eureka.domain.category.dto.LargeCategoryEntity;
+import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface LargeCategoryRepository extends JpaRepository<LargeCategoryEntity, String> {
+
+    @Override
+    List<LargeCategoryEntity> findAll();
+
+    LargeCategoryEntity findByLargeCategoryId(int largeCategoryId);
+}
