@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c29a359821debfc43fe5535341008762c8971fff713dfef3e05342ef7666daf6
-size 388
+package com.ssafy.eureka.domain.card.repository;
+
+
+import com.ssafy.eureka.domain.card.dto.CardEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface CardRepository extends JpaRepository<CardEntity, String> {
+
+    List<CardEntity> findByCardCompanyId(int companyId);
+//    List<CardEntity> findAllByCardCompanyId(int companyId);
+}
