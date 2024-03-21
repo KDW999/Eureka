@@ -1,8 +1,3 @@
-package com.ssafy.eureka.domain.category.repository;
-
-import com.ssafy.eureka.domain.category.dto.LargeCategoryEntity;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface LargeCategoryRepository extends JpaRepository<LargeCategoryEntity, String> {
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fe9e48a794851a3106e11da48668882cdc7e0d5e25101088cfced472d3b205d3
+size 357
