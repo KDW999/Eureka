@@ -1,16 +1,3 @@
-package com.ssafy.eureka.domain.card.dto.response;
-
-import com.ssafy.eureka.domain.card.dto.UserCardEntity;
-import java.util.List;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-public class UserCardListResponse {
-    private List<UserCardEntity> userCardList;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:32381634b46f5e93bda42112e5f76a23cc5746bf1dfafda93436c18e45d1c2e2
+size 383

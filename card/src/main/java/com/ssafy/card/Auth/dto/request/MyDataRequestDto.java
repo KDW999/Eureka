@@ -1,25 +1,3 @@
-package com.ssafy.card.Auth.dto.request;
-
-import jakarta.validation.constraints.NotBlank;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.hibernate.validator.constraints.Length;
-
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
-public class MyDataRequestDto {
-
-    @NotBlank
-    @Length(max=11)
-    String phoneNumber;
-
-    @NotBlank
-    @Length(max=6)
-    String birth;
-
-    @NotBlank
-    @Length(max=15)
-    String name;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4a2715dd62a3c321259386ea965e8a98690819b4608bd6514961b3d6ddec13f6
+size 471
