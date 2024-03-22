@@ -1,8 +1,3 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  assetsInclude: ['**/*.apk'] // .apk 파일을 정적 자산으로 포함
-})
+version https://git-lfs.github.com/spec/v1
+oid sha256:44eddd74e09f45d84c719c51e235d30c22c62e4d49613ee9dac85393262a64ef
+size 237

@@ -1,16 +1,3 @@
-package com.ssafy.card.User.dto.response;
-
-import com.ssafy.card.Card.entity.CardHistoryEntity;
-import java.util.List;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-public class CardPayHistoryResponse {
-    private List<CardHistoryEntity> cardHistoryList;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e433ef4ec4f0ddc031fcf5a4d4501871b8f94b7d4d63977793e054d0e39bc51b
+size 379
