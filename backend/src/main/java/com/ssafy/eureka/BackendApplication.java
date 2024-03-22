@@ -1,13 +1,3 @@
-package com.ssafy.eureka;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class BackendApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(BackendApplication.class, args);
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:712726f087f7fae9e07bdff1bfbbfb226bf26a01db30502f5affce85bd6904d0
+size 394
