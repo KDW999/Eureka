@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:579dd03fe287129ca74ed8569add7d3efbb341af1627777da25c2885f55a358c
-size 235
+// import apk from "../../../frontend/android/app/build/outputs/apk/release/app-release.apk"
+
+export default function MainPage() {
+  return (
+    <div>
+      <h1>Eureka</h1>
+      {/* <a href={apk}>설치하기</a> */}
+    </div>
+  )
+}
