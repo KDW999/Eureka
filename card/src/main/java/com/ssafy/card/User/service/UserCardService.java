@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4967a6dd6e023fc768f13b621a4136a59cba0e3c6e17a6346ca6169311ace8f1
-size 384
+package com.ssafy.card.User.service;
+
+import com.ssafy.card.User.dto.response.CardPayHistoryResponse;
+import com.ssafy.card.User.dto.response.UserCardListResponse;
+
+public interface UserCardService {
+
+    UserCardListResponse listUserCard(String phoneNumber, int cardCompanyId);
+
+    CardPayHistoryResponse listCardHistory(String phoneNumber, String cardIdentifier, String yyyymm);
+}

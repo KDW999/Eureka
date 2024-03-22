@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:49dfd824dd067e09ad9bc9eff264b99d2fedfba41a3a8d862280cbc1616d4ae3
-size 397
+package com.ssafy.card.Auth.dto.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class PayRequestDto {
+    private String cardNumber; // 16자리
+    private String cvc;
+    private String expired_year;
+    private String expired_month;
+    private String password; // 비밀번호 앞 2자리
+}

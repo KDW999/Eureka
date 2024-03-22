@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e550902f98d890267817d30e0dfb6c0dec9d613247c2ab3da60838da238c4a1b
-size 392
+package com.ssafy.eureka.domain.card.repository;
+
+import com.ssafy.eureka.domain.mydata.dto.MyDataToken;
+import java.util.Optional;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MydataTokenRepository extends CrudRepository<MyDataToken, String> {
+    Optional<MyDataToken> findById(String userId);
+}

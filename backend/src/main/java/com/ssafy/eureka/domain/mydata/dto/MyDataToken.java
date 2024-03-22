@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5579fd62b5c8a6688290dda40f3b193b3e3df542e1268dc4d10bd2511a881618
-size 435
+package com.ssafy.eureka.domain.mydata.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.redis.core.RedisHash;
+
+@Getter
+@AllArgsConstructor
+@RedisHash(value = "maDataToekn", timeToLive = 365 * 24 * 60 * 60 * 1000L)
+public class MyDataToken {
+    @Id
+    private String userId;
+    private String accessToken;
+    private String refreshToken;
+}
