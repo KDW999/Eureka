@@ -1,26 +1,3 @@
-version: '3.8'
-
-services:
-  frontend:
-    image: eureka/react
-    build:
-      context: ./frontend-web
-      dockerfile: Dockerfile
-    ports:
-      - "3000:80"
-
-  backend:
-    image: eureka/spring
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
-    ports:
-      - "8000:8000"
-
-# card-service:
-#   image: card/spring
-#   build:
-#     context: ./card
-#     dockerfile: Dockerfile
-#   ports:
-#     - "8001:8000"
+version https://git-lfs.github.com/spec/v1
+oid sha256:314a1a4162729822a017817973adad3c07fb7f935fb0c5de42c8e6778b2b1fdb
+size 419
