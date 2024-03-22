@@ -1,7 +1,6 @@
-package com.ssafy.eureka.domain.user.dto.response;
+package com.ssafy.eureka.domain.mydata.dto.request;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,7 +9,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CheckUserRespnose {
-    private int userId;
-    private String userName;
+public class MyDataCardHistoryRequest {
+    private String cardIdentifier;
+    private String yyyymm;
 }

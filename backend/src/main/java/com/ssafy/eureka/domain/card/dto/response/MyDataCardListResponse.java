@@ -1,6 +1,6 @@
 package com.ssafy.eureka.domain.card.dto.response;
 
-import com.ssafy.eureka.domain.card.dto.CardCompanyEntity;
+import com.ssafy.eureka.domain.card.dto.CardEntity;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,6 +11,6 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CardCompanyListResponse {
-    private List<CardCompanyEntity> cardCompanyList;
+public class CardListResponse {
+    private List<CardEntity> cardList;
 }
