@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d038f90e99cbad003cf4f5724381d7b190741067a87327bdac659de6242a175
-size 345
+package com.ssafy.eureka.domain.mydata.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class MyDataTokenResponse {
+    private String grantType;
+    private String accessToken;
+    private String refreshToken;
+}
