@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:969be678b56be1b3aa7fa54a0de09975af573df96778d7f899796ac14caca804
-size 480
+import React from "react";
+import { StyleSheet, ScrollView, View, Text, Pressable } from "react-native";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
+
+function SelectCardInfo() {
+  return <View></View>;
+}
+
+export default SelectCardInfo;
+
+const styles = StyleSheet.create({
+  nextBtn: {
+    start: "end",
+    color: "#cacaca",
+    marginTop: 80,
+    marginLeft: 5,
+  },
+  chooseOne: {},
+  cardList: {},
+});
