@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d26dad5a332d031312e55274dd2bbf8a546aa2c9dde4892b2f8e29c48f299471
-size 343
+package com.ssafy.eureka.domain.pay.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.redis.core.RedisHash;
+
+@Getter
+@AllArgsConstructor
+@RedisHash(value = "payInfo", timeToLive = 3 * 1000L)
+public class PayInfo {
+    @Id
+    private String orderId;
+}
