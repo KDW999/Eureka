@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6c2f57c201652f292524621b743b15a927d33dbe8066f7a54142df720348403
-size 379
+package com.ssafy.eureka.domain.pay.repository;
+
+import com.ssafy.eureka.domain.pay.dto.PayInfo;
+import java.util.Optional;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface PayInfoRepository extends CrudRepository<PayInfo, String> {
+    Optional<PayInfo> findByOrderId(String OrderId);
+
+}

@@ -1,19 +1,3 @@
-package com.ssafy.eureka.domain.card.dto.request;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-public class RegistPayCardRequest {
-    private int userCardId;
-    private String cardNumber; // 16자리
-    private String cvc;
-    private String expired_year;
-    private String expired_month;
-    private String password; // 비밀번호 앞 2자리
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a469ca8fbe76a4abf5b697da7b1a6c96204726d043229cd5d21bd8ee8b5e62d
+size 447
