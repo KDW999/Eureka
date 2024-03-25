@@ -1,5 +1,3 @@
-<resources>
-  <string name="app_name">frontend</string>
-  <string name="expo_splash_screen_resize_mode" translatable="false">contain</string>
-  <string name="expo_splash_screen_status_bar_translucent" translatable="false">false</string>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:88800b802ed617935ae98a15b3422a088f52797b707fdd2b9cffecbaf322b5f5
+size 249
