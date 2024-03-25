@@ -1,11 +1,3 @@
-package com.ssafy.eureka.domain.category.repository;
-
-import com.ssafy.eureka.domain.category.dto.SmallCategoryEntity;
-import jakarta.persistence.Id;
-import jakarta.validation.constraints.NotNull;
-import java.util.Optional;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface SmallCategoryRepository extends JpaRepository<SmallCategoryEntity, String> {
-    Optional<SmallCategoryEntity> findByCategoryName(String categoryName);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c1b8b4a041d2118193f37f87342bcf52748e2bc65410035adbb7b0279784125
+size 458
