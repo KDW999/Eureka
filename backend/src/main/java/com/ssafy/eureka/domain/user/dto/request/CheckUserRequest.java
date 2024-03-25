@@ -1,13 +1,3 @@
-package com.ssafy.eureka.domain.user.dto.request;
-
-import java.time.LocalDate;
-import lombok.Getter;
-
-@Getter
-public class CheckUserRequest {
-    String userName;
-    String userBirth;
-    char userGender;
-    String phoneNumber;
-    String password;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:027509222e8d4388a7dfe713b3fc002b0785bf680387e613ff86cc2f052b5a71
+size 255
