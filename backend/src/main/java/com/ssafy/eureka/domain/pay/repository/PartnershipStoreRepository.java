@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3543a7818babd0ed87a49bb18e6c9f73a4004e7fa1adb8559708d7ab56875d11
-size 377
+package com.ssafy.eureka.domain.pay.repository;
+
+import com.ssafy.eureka.domain.pay.dto.PartnershipStoreEntity;
+import java.util.Optional;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PartnershipStoreRepository extends JpaRepository<PartnershipStoreEntity, String> {
+
+    Optional<PartnershipStoreEntity> findByStoreCode(String storeCode);
+}
