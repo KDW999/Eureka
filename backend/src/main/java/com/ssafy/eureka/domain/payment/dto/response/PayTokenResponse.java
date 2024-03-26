@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:85b44bd2917311072f0eb9113325c6411fdd1f973a0d2381d87b4cf2235063cd
-size 410
+package com.ssafy.eureka.domain.payment.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class PayTokenResponse {
+    private int cardId;
+    private String cardIdentifier;
+    private String grantType;
+    private String accessToken;
+    private String refreshToken;
+}
