@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:83d0867a760fadd7c90688ec35a8bc96d795107bdd4d817de6b2d8761150ad46
-size 282
+package com.ssafy.eureka.domain.pay.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class AprrovePayResponse {
+    private String orderId;
+}
