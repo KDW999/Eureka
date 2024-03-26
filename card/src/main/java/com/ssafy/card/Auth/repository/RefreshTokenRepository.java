@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95511c0ddb1e294f81362edc0b99850494a223000cba6dddcdc1410e0c02ddcf
-size 381
+package com.ssafy.card.Auth.repository;
+
+import com.ssafy.card.Auth.dto.RefreshToken;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface RefreshTokenRepository extends CrudRepository<RefreshToken, String> {
+
+    boolean existsByUserId(String userId);
+    void deleteByUserId(String userId);
+}
