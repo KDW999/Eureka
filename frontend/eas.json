@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:95dcc2e588431e1e8c27b9cb681527668f0de5482023f0aff9ae18d45116ccc0
-size 275
+{
+  "cli": {
+    "version": ">= 7.6.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}
