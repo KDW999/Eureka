@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fa1fe934507c2fd2444b8d578c0efaa429a4eecdd21a3dab82fc795be27d86ca
-size 315
+import { NavLink } from "react-router-dom";
+import PayQRCode from "../components/PayQRCode";
+
+export default function PayPage() {
+  return (
+    <div className="mx-40 my-10">
+      <div className="mb-8">
+        <NavLink to="/">메인페이지로 이동</NavLink>
+      </div>
+      <PayQRCode />
+    </div>
+  );
+}
