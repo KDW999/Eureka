@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:52f6a4791f753d793cd2630e5244e449c9b5f28333ba5dfbe4948a26b75e2bc0
-size 470
+//package com.ssafy.eureka.domain.card.dto;
+//
+//import com.ssafy.eureka.common.response.ApiResponse;
+//import com.ssafy.eureka.common.response.MyDataApiResponse;
+//import org.springframework.cloud.openfeign.FeignClient;
+//import org.springframework.web.bind.annotation.GetMapping;
+//
+//@FeignClient(name="userCardFeign", url="http://j10e101.p.ssafy.io:8001/card")
+//public interface UserCardFeign {
+//
+//    @GetMapping(path = "/")
+//    public MyDataApiResponse<>
+//}

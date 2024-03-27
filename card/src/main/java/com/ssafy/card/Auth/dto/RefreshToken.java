@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d810c281ce920d2313de1f3dde6b97918499a0aa7d7c85b8e76f3eb05f04121
-size 481
+package com.ssafy.card.Auth.dto;
+
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import org.springframework.data.annotation.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import org.springframework.data.redis.core.RedisHash;
+
+@Getter
+@AllArgsConstructor
+@RedisHash(value = "refreshToken", timeToLive = 365 * 24 * 60 * 60 * 1000L)
+public class RefreshToken {
+
+    @Id
+    private String userId;
+    private String refreshToken;
+}
