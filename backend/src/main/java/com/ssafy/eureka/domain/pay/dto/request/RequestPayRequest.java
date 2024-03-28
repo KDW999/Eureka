@@ -1,29 +1,3 @@
-package com.ssafy.eureka.domain.pay.dto.request;
-
-import java.time.LocalDateTime;
-import lombok.Getter;
-
-@Getter
-public class RequestPayRequest {
-    private String storeCode;
-
-    private String storeId;
-
-    private String orderId;
-
-    private String orderName;
-
-    private int largeCategoryId;
-
-    private int smallCategoryId;
-
-    private Long totalAmount;
-
-    private Long vat;
-
-    private int totalInstallCnt;
-
-    private LocalDateTime requestedAt;
-
-    private String redirectUrl;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c863531374e04991d4f81f829dce9000adfa55c38b593c379968a2164df4952b
+size 501
