@@ -1,23 +1,3 @@
-package com.ssafy.eureka.domain.card.dto.response;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-public class PayUserCardResponse {
-
-    int userCardId;
-    int userId;
-    int cardId;
-    String cardName;
-    int previousPerformance;
-    // ++ 현재까지 사용 금액
-    String firstCardNumber;
-    String lastCardNumber;
-    String imagePath;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a5758edc6a23e3bbe711835f592fff2a377549adddbdbd11fabc2b3ce4d21c28
+size 490
