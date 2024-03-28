@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:afab4d956916cbd145f3d3550846d751c452fd7f80344b7012495bd43098a079
-size 388
+package com.ssafy.eureka.domain.card.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class CardInfoResponse {
+
+    int userCardId;
+    int cardId;
+    String cardName;
+    int cardType;
+    int previousPerformance;
+    boolean isPaymentEnabled;
+}

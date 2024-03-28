@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7955dab60be8702de237c600da42d350f638d4bb1ef84e794a9e0264955dbe87
-size 310
+package com.ssafy.eureka.domain.card.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class CardDetailBenefitList {
+
+    String discountCostType;
+    double discountCost;
+    String largeCategoryName;
+
+}
