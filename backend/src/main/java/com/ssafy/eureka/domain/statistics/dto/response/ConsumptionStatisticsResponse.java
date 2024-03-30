@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91d7d966bf92fb328edbb9e326772c610b7b8848f8c3bd5f544813f3279a0bea
-size 492
+package com.ssafy.eureka.domain.statistics.dto.response;
+
+import com.ssafy.eureka.domain.statistics.dto.ConsumptionStatistics;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.math.BigInteger;
+import java.util.List;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class ConsumptionStatisticsResponse {
+    private BigInteger totalConsumption;
+    private List<ConsumptionStatistics> consumptionList;
+}
