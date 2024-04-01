@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5dde9a19116f91157de36d3f23f70da6b1ac58e8547615b3888c369811c306d6
-size 442
+package com.ssafy.eureka.domain.statistics.dto.response;
+
+import com.ssafy.eureka.domain.statistics.dto.DiscountStatistics;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.List;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class DiscountStatisticsResponse {
+    private Long totalDiscount;
+    private List<DiscountStatistics> discountList;
+}
