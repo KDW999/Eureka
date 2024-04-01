@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7af13abeb06f70caf94c006ae51cb31f69362fdaa7ca62f577716b8401b21061
-size 373
+import API from "./Api";
+
+async function getHomeInfo(token, yyyymm, success, fail) {
+  try {
+    const response = await API(token).get(`/static/${yyyymm}`)
+    success(response);
+  } catch (error) {
+    fail(error);
+  }
+}
+
+async function getHomeOnlyPay(token, yyyymm) {
+  return await API(token).get(`/pay/history?yyyymm=${yyyymm}`);
+}
+
+export {getHomeInfo, getHomeOnlyPay}
