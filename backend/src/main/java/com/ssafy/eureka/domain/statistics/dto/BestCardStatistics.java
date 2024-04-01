@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c19fcf733b428be355f90d5aab87be4b3bbc0eb87d8d20f09bc3f43763c31ff2
-size 402
+package com.ssafy.eureka.domain.statistics.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class BestCardStatistics {
+    private int userCardId;
+    private String cardName;
+    private String imagePath;
+    private int imageAttribute;
+    private int totalDiscount;
+}
