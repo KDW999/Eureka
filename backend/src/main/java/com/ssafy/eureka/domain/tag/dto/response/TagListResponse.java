@@ -1,16 +1,3 @@
-package com.ssafy.eureka.domain.tag.dto.response;
-
-import com.ssafy.eureka.domain.tag.dto.TagEntity;
-import java.util.List;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-public class TagListResponse {
-    private List<TagEntity> tagList;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ccf39c33e9a49d2fb4560a14ceec41549b73afb42fb6e15301be045687bfaf5b
+size 361
