@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:acc103ee4f67694a994a853966851abaac6ca575b70e5a19b499cea2ea7ff149
-size 292
+package com.ssafy.eureka.domain.user.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserInfoDto {
+    private int userId;
+    private String userBirth;
+    private char userGender;
+}
