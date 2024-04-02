@@ -1,16 +1,3 @@
-import { View, Text, Pressable } from "react-native"
-import { useNavigation } from "@react-navigation/native";
-import QRCodeScanner from "./QRCodeScanner";
-import { MaterialIcons } from '@expo/vector-icons';
-
-function QRScanPage () {
-  const navigation = useNavigation()
-
-  return (
-    <View style={{flex:1 , justifyContent: 'center', alignItems: 'center'}}>
-      <QRCodeScanner />
-    </View>
-  )
-}
-
-export default QRScanPage
+version https://git-lfs.github.com/spec/v1
+oid sha256:d0db7a60a21572b2b2429a12066c4618e4c50610d9fbd407e5ef9037bceae5af
+size 428
