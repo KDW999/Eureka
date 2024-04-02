@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7712bad230cd127922ff3f0993eaf0b6303d02e0d543ae3d1cada712580e55b8
-size 470
+package com.ssafy.eureka.domain.statistics.repository;
+
+import com.ssafy.eureka.domain.statistics.entity.DiscountSmallStaticEntity;
+import java.util.Optional;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface DiscountSmallStaticRepository extends JpaRepository<DiscountSmallStaticEntity, String> {
+
+    Optional<DiscountSmallStaticEntity> findByDiscountLargeStaticIdAndSmallCategoryId(int discountLargeStaticId, Integer smallCategoryId);
+}
