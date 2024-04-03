@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:becb1d43ae10fa528b31c550f7ce62213263dfeb5227fd9bb52d7567ebda94db
-size 478
+package com.ssafy.eureka.domain.card.dto.response;
+
+import com.ssafy.eureka.domain.card.dto.CardBenefitDetailEntity;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.List;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class CardRecommendTop3 {
+
+    int cardId;
+    String cardName;
+    String imagePath;
+    int imgAttr;
+    List<Top3ListAndLargeCategoryNameResponse> tlcnrList;
+}

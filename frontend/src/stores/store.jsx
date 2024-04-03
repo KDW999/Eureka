@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:347fa4b502b7953204cc98644d496741d0aa36a02905b417ebe09c6f797ee651
-size 343
+import { configureStore } from "@reduxjs/toolkit";
+import cardSlice from "../slices/cardSlice";
+import productSlice from "../slices/productSlice";
+import staticSlice from "../slices/staticSlice";
+
+
+export const store = configureStore({
+  reducer: {
+    cardList: cardSlice,
+    productList: productSlice,
+    staticList: staticSlice,
+  },
+});
