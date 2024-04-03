@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dadc86022f2f9c3fe238319710f175409fd1e6d127fa01903cc8b5ea9f0fdb49
-size 501
+package com.ssafy.eureka.domain.tag.dto;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "user_tag")
+@Entity
+public class UserTagEntity {
+    @Id
+    private int userTagId;
+
+    @NotNull
+    private int userId;
+
+    @NotNull
+    private int tagId;
+}
