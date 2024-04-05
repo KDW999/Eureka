@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57226e0754c7f0d6537b441acba830c49c5cd81f415faf8fbee02229cab57556
-size 424
+package com.ssafy.card.User.dto.response;
+
+import com.ssafy.card.User.entity.UserCardEntity;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserCardResponse {
+    private int cardId;
+    private String cardIdentifier;
+    private String firstCardNumber;
+    private String lastCardNumber;
+
+}
